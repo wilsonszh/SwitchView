@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchView">
+        <attr name="trackDrawableOn" format="reference" />
+        <attr name="trackDrawableOff" format="reference" />
+
+        <!-- TrackColorOn & TrackColorOff will override trackDrawables-->
+        <attr name="trackColorOn" format="reference|color" />
+        <attr name="trackColorOff" format="reference|color" />
+
+    </declare-styleable>
+</resources>

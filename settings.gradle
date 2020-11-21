@@ -1,0 +1,3 @@
+include ':SwitchView'
+include ':app'
+rootProject.name = "SwitchViewExample"
