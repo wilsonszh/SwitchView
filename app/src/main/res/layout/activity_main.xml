@@ -4,19 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_purple"
+    android:background="@android:color/darker_gray"
     tools:context=".MainActivity">
 
-    <com.wilsonszh.switchview.SwitchView
-        android:id="@+id/switch_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:textColor="#101010"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Switch View Example" />
+
+            <com.wilsonszh.switchview.SwitchView
+                android:id="@+id/switch_view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="Green-Red Thumb with default track"
+                app:thumbColorOff="@android:color/holo_red_dark"
+                app:thumbColorOn="@android:color/holo_green_dark"
+                app:thumbSize="30dp" />
+
+            <com.wilsonszh.switchview.SwitchView
+                android:id="@+id/switch_view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="orange-purple thumb with icon with default track"
+                app:thumbColorOff="@android:color/holo_purple"
+                app:thumbColorOn="@android:color/holo_orange_dark"
+                app:thumbIconOff="@drawable/ic_power_off"
+                app:thumbIconOn="@drawable/ic_power_on"
+                app:thumbSize="30dp" />
+
+            <com.wilsonszh.switchview.SwitchView
+                android:id="@+id/switch_view_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="Red-green thumb with icon and red-green track"
+                app:thumbColorOff="@android:color/holo_red_dark"
+                app:thumbColorOn="@android:color/holo_green_dark"
+                app:thumbIconOff="@drawable/ic_power_off"
+                app:thumbIconOn="@drawable/ic_power_on"
+                app:thumbSize="30dp"
+                app:trackColorOff="@android:color/holo_red_light"
+                app:trackColorOn="@android:color/holo_green_light" />
+
+            <com.wilsonszh.switchview.SwitchView
+                android:id="@+id/switch_view_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="Red-green thumb and black-white track"
+                app:thumbColorOff="@android:color/holo_red_dark"
+                app:thumbColorOn="@android:color/holo_green_dark"
+                app:thumbSize="30dp"
+                app:trackColorOff="@android:color/white"
+                app:trackColorOn="@android:color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

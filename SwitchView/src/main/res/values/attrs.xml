@@ -8,5 +8,13 @@
         <attr name="trackColorOn" format="reference|color" />
         <attr name="trackColorOff" format="reference|color" />
 
+        <!-- Thumb Color and Icon is stackable -->
+        <attr name="thumbColorOn" format="reference|color" />
+        <attr name="thumbColorOff" format="reference|color" />
+        <attr name="thumbIconOn" format="reference" />
+        <attr name="thumbIconOff" format="reference" />
+
+        <attr name="thumbSize" format="dimension"/>
+
     </declare-styleable>
 </resources>
